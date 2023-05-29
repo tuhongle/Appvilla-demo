@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Blog Grid Sidebar</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark fixed-top py-0"
+      id="navbar-scrollspy"
+    >
+      <div class="container py-3 position-relative">
+        <a href="./index.html" class="navbar-brand">
+          <img
+            src="./assets/logo Tu white.png"
+            alt="logo-brand"
+            class="img-fluid"
+            width="160px"
+          />
+        </a>
+        <button
+          class="navbar-toggler border-0 fw-bold shadow-none"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar-menu"
+          aria-controls="navbar-menu"
+          aria-expanded="false"
+        >
+          <span class="toggler-icon top-bar"></span>
+          <span class="toggler-icon middle-bar"></span>
+          <span class="toggler-icon bottom-bar"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center fw-medium mx-2 mx-lg-0"
+          id="navbar-menu"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item px-2">
+              <a href="#home" class="nav-link fw-medium text-white active"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item px-2">
+              <a href="#features" class="nav-link fw-medium text-white"
+                >Features</a
+              >
+            </li>
+            <li class="nav-item px-2">
+              <a href="#overview" class="nav-link fw-medium text-white"
+                >Overview</a
+              >
+            </li>
+            <li class="nav-item px-2">
+              <a href="#pricing" class="nav-link fw-medium text-white"
+                >Pricing</a
+              >
+            </li>
+            <li class="nav-item px-2">
+              <a href="#team" class="nav-link fw-medium text-white">Team</a>
+            </li>
+            <li class="nav-item px-2 dropdown" id="blogButton">
+              <a
+                href="#blog"
+                class="nav-link fw-medium text-white"
+                role="button"
+                data-bs-toggle="dropdown"
+                >Blog</a
+              >
+              <ul
+                class="dropdown-menu show bg-white position-lg-absolute px-4 py-lg-3 py-1"
+              >
+                <li>
+                  <a
+                    href="./blog-grid-sidebar.html"
+                    class="dropdown-item text-decoration-none text-secondary d-block my-1"
+                    >Blog Grid Sidebar</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./blog-single.html"
+                    class="dropdown-item text-decoration-none text-secondary d-block my-1"
+                    >Blog Single</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./blog-grid-sidebar.html"
+                    class="dropdown-item text-decoration-none text-secondary d-block my-1"
+                    >Blog Single Sidebar</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item px-2">
+              <a href="#contact" class="nav-link fw-medium text-white"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+        <button
+          id="first-button"
+          class="btn btn-danger d-none d-md-block btn-outline-light py-2 px-4 fw-medium"
+        >
+          Get It Now
+        </button>
+      </div>
+    </nav>
+    <main>
+      <section id="header" class="text-center text-white bg-danger">
+        <div class="container py-5">
+          <h1 class="mb-3">Blog Grid Sidebar</h1>
+          <nav
+            style="--bs-breadcrumb-divider: '>'"
+            aria-label="breadcrumb"
+            class="d-flex justify-content-center"
+          >
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a href="#" class="text-white text-decoration-none">Home</a>
+              </li>
+              <li class="breadcrumb-item active text-white" aria-current="page">
+                Blog Grid Sidebar
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </section>
+      <section id="blog" class="py-5 bg-light-subtle">
+        <div class="container py-5">
+          <div class="row">
+            <div class="col-lg-8 mb-5">
+              <div class="row mb-5">
+                <div class="col-lg-6 mb-3">
+                  <div class="card border-0 shadow h-100">
+                    <img
+                      src="https://preview.uideck.com/items/appvilla/assets/images/blog/xblog-1.jpg.pagespeed.ic.7alEvDzcRw.webp"
+                      alt=""
+                      class="card-img-top"
+                    />
+                    <div class="card-body text-start p-4 d-flex flex-column">
+                      <a href="" class="text-decoration-none">
+                        <h5 class="card-subtitle text-danger mb-3 fw-medium">
+                          Blog
+                        </h5>
+                      </a>
+                      <a href="" class="text-decoration-none text-dark">
+                        <h4 class="card-title mb-0 fw-bold">
+                          Boost your conversion rate
+                        </h4>
+                      </a>
+                      <p class="my-4 text-secondary lead">
+                        Lorem ipsum dolor sit amet, adipscing elitr, sed diam
+                        nonumy eirmod tempor ividunt dolore magna.
+                      </p>
+                      <div class="row align-items-center mt-auto">
+                        <div class="col-3 ps-2 pe-0 text-center">
+                          <img
+                            src="https://preview.uideck.com/items/appvilla/assets/images/blog/xcomment1.jpg.pagespeed.ic.nTUzOhBqKr.webp"
+                            alt=""
+                            class="img-fluid rounded-circle flex-shrink-0"
+                          />
+                        </div>
+                        <div class="col-9 text-start">
+                          <p class="lead mb-0">Roel Aufderhar</p>
+                          <p class="text-secondary mb-0">
+                            <span>Mar 15, 2023</span>
+                            <i class="bi bi-dot fs-4 text-body-secondary"></i>
+                            <span>5 min read</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-6 mb-3">
+                  <div class="card border-0 shadow h-100">
+                    <img
+                      src="https://preview.uideck.com/items/appvilla/assets/images/blog/xblog-2.jpg.pagespeed.ic.xb1NU2mWer.webp"
+                      alt=""
+                      class="card-img-top"
+                    />
+                    <div class="card-body text-start p-4 d-flex flex-column">
+                      <a href="" class="text-decoration-none">
+                        <h5 class="card-subtitle text-danger mb-3 fw-medium">
+                          Video
+                        </h5>
+                      </a>
+                      <a href="" class="text-decoration-none text-dark">
+                        <h4 class="card-title mb-0 fw-bold">
+                          How to use search engine
+                        </h4>
+                      </a>
+                      <p class="my-4 text-secondary lead">
+                        Lorem ipsum dolor sit amet, adipscing elitr, sed diam
+                        nonumy eirmod tempor ividunt dolore magna.
+                      </p>
+                      <div class="row align-items-center mt-auto">
+                        <div class="col-3 ps-2 pe-0 text-center">
+                          <img
+                            src="https://preview.uideck.com/items/appvilla/assets/images/blog/xcomment2.jpg.pagespeed.ic.j3fObWuXzs.webp"
+                            alt=""
+                            class="img-fluid rounded-circle flex-shrink-0"
+                          />
+                        </div>
+                        <div class="col-9 text-start">
+                          <p class="lead mb-0">Jenifer Zuliya</p>
+                          <p class="text-secondary mb-0">
+                            <span>Feb 10, 2023</span>
+                            <i class="bi bi-dot fs-4 text-body-secondary"></i>
+                            <span>7 min read</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-6 mb-3">
+                  <div class="card border-0 shadow h-100">
+                    <img
+                      src="https://preview.uideck.com/items/appvilla/assets/images/blog/xblog-3.jpg.pagespeed.ic.nR-5rJAUwT.webp"
+                      alt=""
+                      class="card-img-top"
+                    />
+                    <div class="card-body text-start p-4 d-flex flex-column">
+                      <a href="" class="text-decoration-none">
+                        <h5 class="card-subtitle text-danger mb-3 fw-medium">
+                          Marketing
+                        </h5>
+                      </a>
+                      <a href="" class="text-decoration-none text-dark">
+                        <h4 class="card-title mb-0 fw-bold">
+                          Awesome ways to boost sales
+                        </h4>
+                      </a>
+                      <p class="my-4 text-secondary lead">
+                        Lorem ipsum dolor sit amet, adipscing elitr, sed diam
+                        nonumy eirmod tempor ividunt dolore magna.
+                      </p>
+                      <div class="row align-items-center mt-auto">
+                        <div class="col-3 ps-2 pe-0 text-center">
+                          <img
+                            src="https://preview.uideck.com/items/appvilla/assets/images/blog/xcomment3.jpg.pagespeed.ic.-bSrbhJC3m.webp"
+                            alt=""
+                            class="img-fluid rounded-circle flex-shrink-0"
+                          />
+                        </div>
+                        <div class="col-9 text-start">
+                          <p class="lead mb-0">Roel Aufderhar</p>
+                          <p class="text-secondary mb-0">
+                            <span>Jan 20, 2023</span>
+                            <i class="bi bi-dot fs-4 text-body-secondary"></i>
+                            <span>6 min read</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 mb-3">
+                  <div class="card border-0 shadow h-100">
+                    <img
+                      src="https://preview.uideck.com/items/appvilla/assets/images/blog/xblog-1.jpg.pagespeed.ic.7alEvDzcRw.webp"
+                      alt=""
+                      class="card-img-top"
+                    />
+                    <div class="card-body text-start p-4 d-flex flex-column">
+                      <a href="" class="text-decoration-none">
+                        <h5 class="card-subtitle text-danger mb-3 fw-medium">
+                          Blog
+                        </h5>
+                      </a>
+                      <a href="" class="text-decoration-none text-dark">
+                        <h4 class="card-title mb-0 fw-bold">
+                          Boost your conversion rate
+                        </h4>
+                      </a>
+                      <p class="my-4 text-secondary lead">
+                        Lorem ipsum dolor sit amet, adipscing elitr, sed diam
+                        nonumy eirmod tempor ividunt dolore magna.
+                      </p>
+                      <div class="row align-items-center mt-auto">
+                        <div class="col-3 ps-2 pe-0 text-center">
+                          <img
+                            src="https://preview.uideck.com/items/appvilla/assets/images/blog/xcomment1.jpg.pagespeed.ic.nTUzOhBqKr.webp"
+                            alt=""
+                            class="img-fluid rounded-circle flex-shrink-0"
+                          />
+                        </div>
+                        <div class="col-9 text-start">
+                          <p class="lead mb-0">Roel Aufderhar</p>
+                          <p class="text-secondary mb-0">
+                            <span>Mar 15, 2023</span>
+                            <i class="bi bi-dot fs-4 text-body-secondary"></i>
+                            <span>5 min read</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-6 mb-3">
+                  <div class="card border-0 shadow h-100">
+                    <img
+                      src="https://preview.uideck.com/items/appvilla/assets/images/blog/xblog-2.jpg.pagespeed.ic.xb1NU2mWer.webp"
+                      alt=""
+                      class="card-img-top"
+                    />
+                    <div class="card-body text-start p-4 d-flex flex-column">
+                      <a href="" class="text-decoration-none">
+                        <h5 class="card-subtitle text-danger mb-3 fw-medium">
+                          Video
+                        </h5>
+                      </a>
+                      <a href="" class="text-decoration-none text-dark">
+                        <h4 class="card-title mb-0 fw-bold">
+                          How to use search engine
+                        </h4>
+                      </a>
+                      <p class="my-4 text-secondary lead">
+                        Lorem ipsum dolor sit amet, adipscing elitr, sed diam
+                        nonumy eirmod tempor ividunt dolore magna.
+                      </p>
+                      <div class="row align-items-center mt-auto">
+                        <div class="col-3 ps-2 pe-0 text-center">
+                          <img
+                            src="https://preview.uideck.com/items/appvilla/assets/images/blog/xcomment2.jpg.pagespeed.ic.j3fObWuXzs.webp"
+                            alt=""
+                            class="img-fluid rounded-circle flex-shrink-0"
+                          />
+                        </div>
+                        <div class="col-9 text-start">
+                          <p class="lead mb-0">Jenifer Zuliya</p>
+                          <p class="text-secondary mb-0">
+                            <span>Feb 10, 2023</span>
+                            <i class="bi bi-dot fs-4 text-body-secondary"></i>
+                            <span>7 min read</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-6 mb-3">
+                  <div class="card border-0 shadow h-100">
+                    <img
+                      src="https://preview.uideck.com/items/appvilla/assets/images/blog/xblog-3.jpg.pagespeed.ic.nR-5rJAUwT.webp"
+                      alt=""
+                      class="card-img-top"
+                    />
+                    <div class="card-body text-start p-4 d-flex flex-column">
+                      <a href="" class="text-decoration-none">
+                        <h5 class="card-subtitle text-danger mb-3 fw-medium">
+                          Marketing
+                        </h5>
+                      </a>
+                      <a href="" class="text-decoration-none text-dark">
+                        <h4 class="card-title mb-0 fw-bold">
+                          Awesome ways to boost sales
+                        </h4>
+                      </a>
+                      <p class="my-4 text-secondary lead">
+                        Lorem ipsum dolor sit amet, adipscing elitr, sed diam
+                        nonumy eirmod tempor ividunt dolore magna.
+                      </p>
+                      <div class="row align-items-center mt-auto">
+                        <div class="col-3 ps-2 pe-0 text-center">
+                          <img
+                            src="https://preview.uideck.com/items/appvilla/assets/images/blog/xcomment3.jpg.pagespeed.ic.-bSrbhJC3m.webp"
+                            alt=""
+                            class="img-fluid rounded-circle flex-shrink-0"
+                          />
+                        </div>
+                        <div class="col-9 text-start">
+                          <p class="lead mb-0">Roel Aufderhar</p>
+                          <p class="text-secondary mb-0">
+                            <span>Jan 20, 2023</span>
+                            <i class="bi bi-dot fs-4 text-body-secondary"></i>
+                            <span>6 min read</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 mb-3">
+                  <div class="card border-0 shadow h-100">
+                    <img
+                      src="https://preview.uideck.com/items/appvilla/assets/images/blog/xblog-1.jpg.pagespeed.ic.7alEvDzcRw.webp"
+                      alt=""
+                      class="card-img-top"
+                    />
+                    <div class="card-body text-start p-4 d-flex flex-column">
+                      <a href="" class="text-decoration-none">
+                        <h5 class="card-subtitle text-danger mb-3 fw-medium">
+                          Blog
+                        </h5>
+                      </a>
+                      <a href="" class="text-decoration-none text-dark">
+                        <h4 class="card-title mb-0 fw-bold">
+                          Boost your conversion rate
+                        </h4>
+                      </a>
+                      <p class="my-4 text-secondary lead">
+                        Lorem ipsum dolor sit amet, adipscing elitr, sed diam
+                        nonumy eirmod tempor ividunt dolore magna.
+                      </p>
+                      <div class="row align-items-center mt-auto">
+                        <div class="col-3 ps-2 pe-0 text-center">
+                          <img
+                            src="https://preview.uideck.com/items/appvilla/assets/images/blog/xcomment1.jpg.pagespeed.ic.nTUzOhBqKr.webp"
+                            alt=""
+                            class="img-fluid rounded-circle flex-shrink-0"
+                          />
+                        </div>
+                        <div class="col-9 text-start">
+                          <p class="lead mb-0">Roel Aufderhar</p>
+                          <p class="text-secondary mb-0">
+                            <span>Mar 15, 2023</span>
+                            <i class="bi bi-dot fs-4 text-body-secondary"></i>
+                            <span>5 min read</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-6 mb-3">
+                  <div class="card border-0 shadow h-100">
+                    <img
+                      src="https://preview.uideck.com/items/appvilla/assets/images/blog/xblog-2.jpg.pagespeed.ic.xb1NU2mWer.webp"
+                      alt=""
+                      class="card-img-top"
+                    />
+                    <div class="card-body text-start p-4 d-flex flex-column">
+                      <a href="" class="text-decoration-none">
+                        <h5 class="card-subtitle text-danger mb-3 fw-medium">
+                          Video
+                        </h5>
+                      </a>
+                      <a href="" class="text-decoration-none text-dark">
+                        <h4 class="card-title mb-0 fw-bold">
+                          How to use search engine
+                        </h4>
+                      </a>
+                      <p class="my-4 text-secondary lead">
+                        Lorem ipsum dolor sit amet, adipscing elitr, sed diam
+                        nonumy eirmod tempor ividunt dolore magna.
+                      </p>
+                      <div class="row align-items-center mt-auto">
+                        <div class="col-3 ps-2 pe-0 text-center">
+                          <img
+                            src="https://preview.uideck.com/items/appvilla/assets/images/blog/xcomment2.jpg.pagespeed.ic.j3fObWuXzs.webp"
+                            alt=""
+                            class="img-fluid rounded-circle flex-shrink-0"
+                          />
+                        </div>
+                        <div class="col-9 text-start">
+                          <p class="lead mb-0">Jenifer Zuliya</p>
+                          <p class="text-secondary mb-0">
+                            <span>Feb 10, 2023</span>
+                            <i class="bi bi-dot fs-4 text-body-secondary"></i>
+                            <span>7 min read</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <nav aria-label="blog">
+                <ul class="pagination">
+                  <li class="page-item mx-2">
+                    <a
+                      class="page-link text-dark px-4 py-2 rounded-2 fs-5 d-inline-block"
+                      href="#"
+                      >Prev</a
+                    >
+                  </li>
+                  <li class="page-item mx-1 active" aria-current="pag2mx-2">
+                    <a
+                      class="page-link text-dark px-4 py-2 rounded-2 fs-5 d-inline-block"
+                      href="#"
+                      >2</a
+                    >
+                  </li>
+                  <li class="page-item mx-2">
+                    <a
+                      class="page-link text-dark px-4 py-2 rounded-2 fs-5 d-inline-block"
+                      href="#"
+                      >3</a
+                    >
+                  </li>
+                  <li class="page-item mx-2">
+                    <a
+                      class="page-link text-dark px-4 py-2 rounded-2 fs-5 d-inline-block"
+                      href="#"
+                      >4</a
+                    >
+                  </li>
+                  <li class="page-item mx-2">
+                    <a
+                      class="page-link text-dark px-4 py-2 rounded-2 fs-5 d-inline-block"
+                      href="#"
+                      >Next</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="col-lg-4">
+              <div class="search-this-site mb-5 p-5 bg-white rounded-3 shadow">
+                <h3 class="fw-semibold fs-4 lead mb-4">Search This Site</h3>
+                <div class="input-group border rounded-2 border-1">
+                  <input
+                    type="text"
+                    class="form-control border-0 shadow-none ps-4 py-3"
+                    placeholder="Search Here..."
+                  />
+                  <button
+                    class="btn btn-danger text-light m-2 rounded-2 input-group-sm"
+                    type="button"
+                  >
+                    <i class="bi bi-search"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="popular-feeds mb-5 p-5 bg-white rounded-3 shadow">
+                <h3 class="fw-semibold fs-4 lead mb-4">Popular Feeds</h3>
+                <div class="row align-items-center py-4 border-bottom">
+                  <div class="col-4">
+                    <img
+                      src="https://preview.uideck.com/items/appvilla/assets/images/blog/xblog-sidebar-1.jpg.pagespeed.ic.xylzmyGFEz.webp"
+                      class="img-fluid rounded-2"
+                    />
+                  </div>
+                  <div class="col-8 text-start">
+                    <p class="text-secondary fw-medium mb-0">Creative</p>
+                    <h6 class="fw-medium lh-base my-2">
+                      Bringing Great Design Ideas To Completion
+                    </h6>
+                    <p class="text-secondary mb-0">
+                      <i class="bi bi-calendar3 me-2"></i>
+                      05th Nov 2023
+                    </p>
+                  </div>
+                </div>
+                <div class="row align-items-center py-4 border-bottom">
+                  <div class="col-4">
+                    <img
+                      src="https://preview.uideck.com/items/appvilla/assets/images/blog/xblog-sidebar-2.jpg.pagespeed.ic.NZkplNwOvZ.webp"
+                      class="img-fluid rounded-2"
+                    />
+                  </div>
+                  <div class="col-8 text-start">
+                    <p class="text-secondary fw-medium mb-0">Jobs</p>
+                    <h6 class="fw-medium lh-base my-2">
+                      Live Life Smart And Focus On The Positive
+                    </h6>
+                    <p class="text-secondary mb-0">
+                      <i class="bi bi-calendar3 me-2"></i>
+                      24th Mar 2023
+                    </p>
+                  </div>
+                </div>
+                <div class="row align-items-center py-4">
+                  <div class="col-4">
+                    <img
+                      src="https://preview.uideck.com/items/appvilla/assets/images/blog/xblog-sidebar-3.jpg.pagespeed.ic.l0gqDZ5H6F.webp"
+                      class="img-fluid rounded-2"
+                    />
+                  </div>
+                  <div class="col-8 text-start">
+                    <p class="text-secondary fw-medium mb-0">Marketing</p>
+                    <h6 class="fw-medium lh-base my-2">
+                      We're currently acceping new projects.
+                    </h6>
+                    <p class="text-secondary mb-0">
+                      <i class="bi bi-calendar3 me-2"></i>
+                      30th Jan 2023
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="categories mb-5 p-5 bg-white rounded-3 shadow">
+                <h3 class="fw-semibold fs-4 lead mb-4">Categories</h3>
+                <p class="text-secondary pb-4 fw-medium border-bottom">
+                  Web Design
+                </p>
+                <p class="text-secondary pb-4 fw-medium border-bottom">
+                  Branding
+                </p>
+                <p class="text-secondary pb-4 fw-medium border-bottom">
+                  Graphic Design
+                </p>
+                <p class="text-secondary pb-4 fw-medium border-bottom">
+                  Marketing
+                </p>
+                <p class="text-secondary mb-0 fw-medium">Wireframing</p>
+              </div>
+              <div class="popular-tags mb-5 p-5 bg-white rounded-3 shadow">
+                <h3 class="fw-semibold fs-4 lead mb-5">Popular Tags</h3>
+                <div>
+                  <span
+                    class="border px-4 py-2 rounded-2 text-secondary me-3 mb-3 d-inline-block"
+                    >Popular</span
+                  >
+                  <span
+                    class="border px-4 py-2 rounded-2 text-secondary me-3 mb-3 d-inline-block"
+                    >Design</span
+                  >
+                  <span
+                    class="border px-4 py-2 rounded-2 text-secondary me-3 mb-3 d-inline-block"
+                    >UX</span
+                  >
+                  <span
+                    class="border px-4 py-2 rounded-2 text-secondary me-3 mb-3 d-inline-block"
+                    >Usability</span
+                  >
+                  <span
+                    class="border px-4 py-2 rounded-2 text-secondary me-3 mb-3 d-inline-block"
+                    >Interview</span
+                  >
+                  <span
+                    class="border px-4 py-2 rounded-2 text-secondary me-3 mb-3 d-inline-block"
+                    >Jobs</span
+                  >
+                  <span
+                    class="border px-4 py-2 rounded-2 text-secondary me-3 mb-3 d-inline-block"
+                    >Develop</span
+                  >
+                  <span
+                    class="border px-4 py-2 rounded-2 text-secondary me-3 mb-3 d-inline-block"
+                    >Business</span
+                  >
+                  <span
+                    class="border px-4 py-2 rounded-2 text-secondary me-3 mb-3 d-inline-block"
+                    >Tech</span
+                  >
+                  <span
+                    class="border px-4 py-2 rounded-2 text-secondary me-3 mb-3 d-inline-block"
+                    >Consult</span
+                  >
+                  <span
+                    class="border px-4 py-2 rounded-2 text-secondary me-3 mb-3 d-inline-block"
+                    >Employee</span
+                  >
+                </div>
+              </div>
+              <div class="need-help mb-5 p-5 bg-white rounded-3 shadow">
+                <h3 class="fw-semibold fs-4 lead mb-5">Need Help?</h3>
+                <p class="fw-semibold fs-3 text-danger">Online Help!</p>
+                <p class="fw-medium fs-5">+(123) 456-78-90</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="py-5 text-center bg-dark position-relative">
+        <div class="container py-5">
+          <div class="row mb-5">
+            <div class="col-md-4 text-center text-md-start">
+              <img
+                src="./assets/logo Tu white.png"
+                alt="logo white"
+                class="img-fluid w-75 mb-4"
+              />
+              <p class="text-light lead">
+                Making the world a better place through constructing elegant
+                hierarchies.
+              </p>
+              <div
+                class="social-logo text-light fs-4 my-4 gap-4 d-flex flex-wrap justify-content-center justify-content-md-start"
+              >
+                <i class="bi bi-facebook d-inline-block"></i>
+                <i class="bi bi-twitter d-inline-block"></i>
+                <i class="bi bi-instagram d-inline-block"></i>
+                <i class="bi bi-linkedin d-inline-block"></i>
+                <i class="bi bi-youtube d-inline-block"></i>
+                <i class="bi bi-pinterest d-inline-block"></i>
+              </div>
+              <p class="text-light mb-5 mb-md-0">
+                Designed and Developed by
+                <a href="" class="text-light text-decoration-none">TuHongLe</a>
+              </p>
+            </div>
+            <div class="col-md-8 text-light">
+              <div class="row">
+                <div
+                  class="col-md-6 col-lg-3 text-center text-lg-start mb-4 mb-lg-0"
+                >
+                  <h4 class="mb-4 fs-4 fw-bold">Solutions</h4>
+                  <div class="text">
+                    <p>Marketing</p>
+                    <p>Analytics</p>
+                    <p>Commerce</p>
+                    <p>Insights</p>
+                    <p>Promotion</p>
+                  </div>
+                </div>
+                <div
+                  class="col-md-6 col-lg-3 text-center text-lg-start mb-4 mb-lg-0"
+                >
+                  <h4 class="mb-4 fs-4 fw-bold">Support</h4>
+                  <div class="text">
+                    <p>Pricing</p>
+                    <p>Documentation</p>
+                    <p>Guides</p>
+                    <p>API Status</p>
+                    <p>Live Support</p>
+                  </div>
+                </div>
+                <div
+                  class="col-md-6 col-lg-3 text-center text-lg-start mb-4 mb-lg-0"
+                >
+                  <h4 class="mb-4 fs-4 fw-bold">Company</h4>
+                  <div class="text">
+                    <p>About Us</p>
+                    <p>Our Blog</p>
+                    <p>Jobs</p>
+                    <p>Press</p>
+                    <p>Contact Us</p>
+                  </div>
+                </div>
+                <div
+                  class="col-md-6 col-lg-3 text-center text-lg-start mb-4 mb-lg-0"
+                >
+                  <h4 class="mb-4 fs-4 fw-bold">Legal</h4>
+                  <div class="text">
+                    <p>Terms & Conditions</p>
+                    <p>Privacy Policy</p>
+                    <p>Catering Services</p>
+                    <p>Customer Relations</p>
+                    <p>Innovation</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <form
+            class="p-4 border border-secondary-subtle border-opacity-25 rounded-3"
+          >
+            <div class="row d-md-flex align-items-md-center">
+              <div class="col-md-5 text-light text-center text-md-start">
+                <p class="lead fw-medium">Subscribe To Our Newsletter</p>
+                <p>
+                  The latest news, articles, and resources, sent to your inbox
+                  weekly.
+                </p>
+              </div>
+              <div class="col-md-7">
+                <div class="row">
+                  <div class="col-md-8 p-0 d-flex mb-3 mb-md-0">
+                    <input
+                      type="email"
+                      class="form-control ps-3 py-3 py-md-2 d-block bg-secondary text-light"
+                      placeholder="Your email address"
+                    />
+                  </div>
+                  <div class="col-md-4 p-0">
+                    <div class="px-md-2 px-0">
+                      <button
+                        class="btn btn-danger text-light px-4 py-3 fw-medium lead w-100"
+                      >
+                        Subscribe
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+          <a href="">
+            <button
+              class="btn btn-danger btn-lg text-light position-fixed bottom-0 end-0 m-2"
+            >
+              <i class="fa-solid fa-angle-up"></i>
+            </button>
+          </a>
+        </div>
+      </section>
+    </main>
+    <!-- Swwiper JS here -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- ====== Bootstrap 5 JS here ======= -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

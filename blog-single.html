@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Blog Grid Sidebar</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark fixed-top py-0"
+      id="navbar-scrollspy"
+    >
+      <div class="container py-3 position-relative">
+        <a href="./index.html" class="navbar-brand">
+          <img
+            src="./assets/logo Tu white.png"
+            alt="logo-brand"
+            class="img-fluid"
+            width="160px"
+          />
+        </a>
+        <button
+          class="navbar-toggler border-0 fw-bold shadow-none"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar-menu"
+          aria-controls="navbar-menu"
+          aria-expanded="false"
+        >
+          <span class="toggler-icon top-bar"></span>
+          <span class="toggler-icon middle-bar"></span>
+          <span class="toggler-icon bottom-bar"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center fw-medium mx-2 mx-lg-0"
+          id="navbar-menu"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item px-2">
+              <a href="#home" class="nav-link fw-medium text-white active"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item px-2">
+              <a href="#features" class="nav-link fw-medium text-white"
+                >Features</a
+              >
+            </li>
+            <li class="nav-item px-2">
+              <a href="#overview" class="nav-link fw-medium text-white"
+                >Overview</a
+              >
+            </li>
+            <li class="nav-item px-2">
+              <a href="#pricing" class="nav-link fw-medium text-white"
+                >Pricing</a
+              >
+            </li>
+            <li class="nav-item px-2">
+              <a href="#team" class="nav-link fw-medium text-white">Team</a>
+            </li>
+            <li class="nav-item px-2 dropdown" id="blogButton">
+              <a
+                href="#blog"
+                class="nav-link fw-medium text-white"
+                role="button"
+                data-bs-toggle="dropdown"
+                >Blog</a
+              >
+              <ul
+                class="dropdown-menu show bg-white position-lg-absolute px-4 py-lg-3 py-1"
+              >
+                <li>
+                  <a
+                    href="./blog-grid-sidebar.html"
+                    class="dropdown-item text-decoration-none text-secondary d-block my-1"
+                    >Blog Grid Sidebar</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./blog-single.html"
+                    class="dropdown-item text-decoration-none text-secondary d-block my-1"
+                    >Blog Single</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./blog-grid-sidebar.html"
+                    class="dropdown-item text-decoration-none text-secondary d-block my-1"
+                    >Blog Single Sidebar</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item px-2">
+              <a href="#contact" class="nav-link fw-medium text-white"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+        <button
+          id="first-button"
+          class="btn btn-danger d-none d-md-block btn-outline-light py-2 px-4 fw-medium"
+        >
+          Get It Now
+        </button>
+      </div>
+    </nav>
+    <main>
+      <section id="header" class="text-center text-white bg-danger">
+        <div class="container py-5">
+          <h1 class="mb-3">Blog Single</h1>
+          <nav
+            style="--bs-breadcrumb-divider: '>'"
+            aria-label="breadcrumb"
+            class="d-flex justify-content-center"
+          >
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a href="#" class="text-white text-decoration-none">Home</a>
+              </li>
+              <li class="breadcrumb-item active text-white" aria-current="page">
+                Blog Single
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </section>
+      <section class="py-5 bg-light-subtle" id="blog-content">
+        <div
+          class="container main-content bg-white shadow py-5 px-0 rounded-4 mt-5"
+        >
+          <h3 class="fw-semibold mt-3 mb-5 px-5">
+            Web design refers to the design of websites that are displayed on
+            the internet.
+          </h3>
+          <div class="mb-5 px-5 d-md-flex align-items-md-center">
+            <div class="mb-4 mb-md-0 main-author">
+              <img
+                src="data:image/webp;base64,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"
+                class="rounded-circle img-fluid me-3"
+                width="60px"
+              />
+              <p class="d-inline-block fw-medium text-secondary">
+                Roel Aufderhar
+              </p>
+            </div>
+            <div
+              class="author-footer fw-medium text-secondary d-flex align-items-center mb-0 justify-content-between justify-content-md-start"
+            >
+              <i class="bi bi-dot fs-2 text-opacity-50 d-none d-md-block"></i>
+              <div>
+                <i class="bi bi-calendar3 me-1"></i>
+                <span>10 Feb 2023</span>
+              </div>
+              <i class="bi bi-dot fs-2 text-opacity-50 d-none d-md-block"></i>
+              <div>
+                <i class="bi bi-tag me-1"></i>
+                <span>Marketing</span>
+              </div>
+              <i class="bi bi-dot fs-2 text-opacity-50 d-none d-md-block"></i>
+              <div>
+                <i class="bi bi-stopwatch me-1"></i>
+                <span>5 min read</span>
+              </div>
+            </div>
+          </div>
+          <img
+            src="https://preview.uideck.com/items/appvilla/assets/images/blog/xblog-single.jpg.pagespeed.ic.D6VwAV4Ouw.webp"
+            alt=""
+            class="img-fluid w-100"
+          />
+          <div class="blog-content px-5 pt-5 text-secondary lh-lg fs-5">
+            <p>
+              We denounce with righteous indige nation and dislike men who are
+              so beguiled and demo realized by the charms of pleasure of the
+              moment, so blinded by desire, that they cannot foresee the pain
+              and trouble that are bound to ensue; and equal blame belongs to
+              those who fail in their duty through weakness of will, which is
+              the same as saying through shrinking from toil and pain. These
+              cases are perfectly simple and easy to distinguish. In a free
+              hour, when our power of choice is untrammelled and when nothing
+              prevents our being able to do what we like best, every pleasure is
+              to be welcomed and every pain avoided.
+            </p>
+            <ul class="list-unstyled">
+              <li>For those of you who are serious about having more.</li>
+              <li>
+                There are a million distractions in every facet of our lives.
+              </li>
+              <li>
+                The sad thing is the majority of people have no clue about what
+                they truly want.
+              </li>
+              <li>Once you have a clear understanding of what you want</li>
+              <li>
+                Focus is having the unwavering attention to complete what you
+                set out to do.
+              </li>
+            </ul>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia.
+            </p>
+            <figure
+              class="border d-flex flex-column p-5 my-5 align-items-center text-center rounded-4"
+            >
+              <i class="bi bi-quote d-block text-danger display-3"></i>
+              <blockquote class="text-dark fw-medium">
+                "Don't demand that things happen as you wish, but wish that they
+                happen as they do happen, and you will go on well."
+              </blockquote>
+              <figcaption class="small">
+                - Epictetus, The Enchiridion
+              </figcaption>
+            </figure>
+            <h4 class="fw-semibold text-dark mb-4">
+              Setting the mood with incense
+            </h4>
+            <p>
+              Remove aversion, then, from all things that are not in our
+              control, and transfer it to things contrary to the nature of what
+              is in our control. But, for the present, totally suppress desire:
+              for, if you desire any of the things which are not in your own
+              control, you must necessarily be disappointed; and of those which
+              are, and which it would be laudable to desire, nothing is yet in
+              your possession. Use only the appropriate actions of pursuit and
+              avoidance; and even these lightly, and with gentleness and
+              reservation.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit.
+            </p>
+            <div class="social-share d-md-flex align-items-md-center">
+              <p class="h5 text-dark fw-semibold me-5 mb-3 mb-md-0">
+                Social Share
+              </p>
+              <div>
+                <i class="bi bi-facebook me-3" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="facebook"></i>
+                <i class="bi bi-twitter me-3" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="twitter"></i>
+                <i class="bi bi-google me-3" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="google+"></i>
+                <i class="bi bi-linkedin me-3" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="linkedin"></i>
+                <i class="bi bi-pinterest" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="pinterest"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container post-comments bg-white shadow p-5 rounded-4 mt-5">
+          <h3 class="fw-semibold mt-3 mb-5 px-5">Post Comments</h3>
+          <div class="rounded-4 bg-body-tertiary d-md-flex p-5 mb-4">
+            <img
+              src="data:image/webp;base64,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"
+              class="rounded-circle flex-shrink-0 me-5 mb-3 mb-md-0"
+              width="100px"
+              height="100px"
+            />
+            <div class="comment-text">
+              <div
+                class="d-md-flex justify-content-md-between align-items-md-start"
+              >
+                <div>
+                  <h4>Arista Williamson</h4>
+                  <p class="text-secondary">19th May 2023</p>
+                </div>
+                <p class="fw-medium text-secondary d-flex align-items-center reply">
+                  <i class="bi bi-reply me-1 lead"></i>
+                  Reply
+                </p>
+              </div>
+              <p class="text-secondary lh-lg mb-0">
+                Donec aliquam ex ut odio dictum, ut consequat leo interdum.
+                Aenean nunc ipsum, blandit eu enim sed, facilisis convallis
+                orci. Etiam commodo lectus quis vulputate tincidunt. Mauris
+                tristique velit eu magna maximus condimentum.
+              </p>
+            </div>
+          </div>
+          <div class="rounded-4 bg-body-tertiary d-md-flex p-5 mb-4 ms-md-5">
+            <img
+              src="data:image/webp;base64,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"
+              class="rounded-circle flex-shrink-0 me-5 mb-3 mb-md-0"
+              width="100px"
+              height="100px"
+            />
+            <div class="comment-text">
+              <div
+                class="d-md-flex justify-content-md-between align-items-md-start"
+              >
+                <div>
+                  <h4>Rosalina Kelian</h4>
+                  <p class="text-secondary">15th May 2023</p>
+                </div>
+                <p class="fw-medium text-secondary d-flex align-items-center reply">
+                  <i class="bi bi-reply me-1 lead"></i>
+                  Reply
+                </p>
+              </div>
+              <p class="text-secondary lh-lg mb-0">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim.
+              </p>
+            </div>
+          </div>
+          <div class="rounded-4 bg-body-tertiary d-md-flex p-5 mb-4">
+            <img
+              src="https://preview.uideck.com/items/appvilla/assets/images/blog/xcomment3.jpg.pagespeed.ic.-bSrbhJC3m.webp"
+              class="rounded-circle flex-shrink-0 me-5 mb-3 mb-md-0"
+              width="100px"
+              height="100px"
+            />
+            <div class="comment-text">
+              <div
+                class="d-md-flex justify-content-md-between align-items-md-start"
+              >
+                <div>
+                  <h4>Alex Jemmi</h4>
+                  <p class="text-secondary">12th May 2023</p>
+                </div>
+                <p class="fw-medium text-secondary d-flex align-items-center reply">
+                  <i class="bi bi-reply me-1 lead"></i>
+                  Reply
+                </p>
+              </div>
+              <p class="text-secondary lh-lg mb-0">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container leave-comment bg-white shadow p-5 rounded-4 mt-5">
+          <h3 class="fw-semibold mt-3 px-5">Leave A Comment</h3>
+          <form class="bg-white p-5 rounded-2">
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <input
+                  type="text"
+                  placeholder="Website URL"
+                  class="form-control p-3 bg-light-subtle rounded-2 w-100 shadow-none"
+                  required
+                />
+              </div>
+              <div class="col-md-6 mb-3">
+                <input
+                  type="text"
+                  placeholder="Your Name"
+                  class="form-control p-3 bg-light-subtle rounded-2 w-100 shadow-none"
+                  required
+                />
+              </div>
+              <div class="col-md-6 mb-3">
+                <input
+                  type="email"
+                  placeholder="Your Email"
+                  class="form-control p-3 bg-light-subtle rounded-2 w-100 shadow-none"
+                  required
+                />
+              </div>
+              <div class="col-md-6 mb-3">
+                <input
+                  type="text"
+                  placeholder="Phone Number"
+                  class="form-control p-3 bg-light-subtle rounded-2 w-100 shadow-none"
+                  required
+                />
+              </div>
+              <div class="col-12 mb-3">
+                <textarea
+                  name="yourcomments"
+                  id=""
+                  cols="30"
+                  rows="8"
+                  placeholder="Your Comments"
+                  class="form-control p-3 bg-light-subtle rounded-2 w-100 shadow-none"
+                ></textarea>
+              </div>
+              <div class="col-6 col-md-4">
+                <button class="btn btn-danger text-white w-100 py-3 border-0">
+                  Post Comment
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section id="contact" class="py-5 text-center bg-dark position-relative">
+        <div class="container py-5">
+          <div class="row mb-5">
+            <div class="col-md-4 text-center text-md-start">
+              <img
+                src="./assets/logo Tu white.png"
+                alt="logo white"
+                class="img-fluid w-75 mb-4"
+              />
+              <p class="text-light lead">
+                Making the world a better place through constructing elegant
+                hierarchies.
+              </p>
+              <div
+                class="social-logo text-light fs-4 my-4 gap-4 d-flex flex-wrap justify-content-center justify-content-md-start"
+              >
+                <i class="bi bi-facebook d-inline-block"></i>
+                <i class="bi bi-twitter d-inline-block"></i>
+                <i class="bi bi-instagram d-inline-block"></i>
+                <i class="bi bi-linkedin d-inline-block"></i>
+                <i class="bi bi-youtube d-inline-block"></i>
+                <i class="bi bi-pinterest d-inline-block"></i>
+              </div>
+              <p class="text-light mb-5 mb-md-0">
+                Designed and Developed by
+                <a href="" class="text-light text-decoration-none">TuHongLe</a>
+              </p>
+            </div>
+            <div class="col-md-8 text-light">
+              <div class="row">
+                <div
+                  class="col-md-6 col-lg-3 text-center text-lg-start mb-4 mb-lg-0"
+                >
+                  <h4 class="mb-4 fs-4 fw-bold">Solutions</h4>
+                  <div class="text">
+                    <p>Marketing</p>
+                    <p>Analytics</p>
+                    <p>Commerce</p>
+                    <p>Insights</p>
+                    <p>Promotion</p>
+                  </div>
+                </div>
+                <div
+                  class="col-md-6 col-lg-3 text-center text-lg-start mb-4 mb-lg-0"
+                >
+                  <h4 class="mb-4 fs-4 fw-bold">Support</h4>
+                  <div class="text">
+                    <p>Pricing</p>
+                    <p>Documentation</p>
+                    <p>Guides</p>
+                    <p>API Status</p>
+                    <p>Live Support</p>
+                  </div>
+                </div>
+                <div
+                  class="col-md-6 col-lg-3 text-center text-lg-start mb-4 mb-lg-0"
+                >
+                  <h4 class="mb-4 fs-4 fw-bold">Company</h4>
+                  <div class="text">
+                    <p>About Us</p>
+                    <p>Our Blog</p>
+                    <p>Jobs</p>
+                    <p>Press</p>
+                    <p>Contact Us</p>
+                  </div>
+                </div>
+                <div
+                  class="col-md-6 col-lg-3 text-center text-lg-start mb-4 mb-lg-0"
+                >
+                  <h4 class="mb-4 fs-4 fw-bold">Legal</h4>
+                  <div class="text">
+                    <p>Terms & Conditions</p>
+                    <p>Privacy Policy</p>
+                    <p>Catering Services</p>
+                    <p>Customer Relations</p>
+                    <p>Innovation</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <form
+            class="p-4 border border-secondary-subtle border-opacity-25 rounded-3"
+          >
+            <div class="row d-md-flex align-items-md-center">
+              <div class="col-md-5 text-light text-center text-md-start">
+                <p class="lead fw-medium">Subscribe To Our Newsletter</p>
+                <p>
+                  The latest news, articles, and resources, sent to your inbox
+                  weekly.
+                </p>
+              </div>
+              <div class="col-md-7">
+                <div class="row">
+                  <div class="col-md-8 p-0 d-flex mb-3 mb-md-0">
+                    <input
+                      type="email"
+                      class="form-control ps-3 py-3 py-md-2 d-block bg-secondary text-light"
+                      placeholder="Your email address"
+                    />
+                  </div>
+                  <div class="col-md-4 p-0">
+                    <div class="px-md-2 px-0">
+                      <button
+                        class="btn btn-danger text-light px-4 py-3 fw-medium lead w-100"
+                      >
+                        Subscribe
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+          <a href="">
+            <button
+              class="btn btn-danger btn-lg text-light position-fixed bottom-0 end-0 m-2"
+            >
+              <i class="fa-solid fa-angle-up"></i>
+            </button>
+          </a>
+        </div>
+      </sectiomd
+    </main>
+    <!-- Swwiper JS here -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- ====== Bootstrap 5 JS here ======= -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
