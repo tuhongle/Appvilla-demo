@@ -1,0 +1,1314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Appvilla Demo App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark fixed-top py-0"
+      id="navbar-scrollspy"
+    >
+      <div class="container py-3 position-relative">
+        <a href="#" class="navbar-brand">
+          <img
+            src="./assets/logo Tu white.png"
+            alt="logo-brand"
+            class="img-fluid"
+            width="160px"
+          />
+        </a>
+        <button
+          class="navbar-toggler border-0 fw-bold shadow-none"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar-menu"
+          aria-controls="navbar-menu"
+          aria-expanded="false"
+        >
+          <span class="toggler-icon top-bar"></span>
+          <span class="toggler-icon middle-bar"></span>
+          <span class="toggler-icon bottom-bar"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center fw-medium mx-2 mx-lg-0"
+          id="navbar-menu"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item px-2">
+              <a href="#home" class="nav-link fw-medium text-white active"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item px-2">
+              <a href="#features" class="nav-link fw-medium text-white"
+                >Features</a
+              >
+            </li>
+            <li class="nav-item px-2">
+              <a href="#overview" class="nav-link fw-medium text-white"
+                >Overview</a
+              >
+            </li>
+            <li class="nav-item px-2">
+              <a href="#pricing" class="nav-link fw-medium text-white"
+                >Pricing</a
+              >
+            </li>
+            <li class="nav-item px-2">
+              <a href="#team" class="nav-link fw-medium text-white">Team</a>
+            </li>
+            <li class="nav-item px-2 dropdown" id="blogButton">
+              <a
+                href="#blog"
+                class="nav-link fw-medium text-white"
+                role="button"
+                data-bs-toggle="dropdown"
+                >Blog</a
+              >
+              <ul
+                class="dropdown-menu show bg-white position-lg-absolute px-4 py-lg-3 py-1"
+              >
+                <li>
+                  <a
+                    href=""
+                    class="dropdown-item text-decoration-none text-secondary d-block my-1"
+                    >Blog Grid Sidebar</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href=""
+                    class="dropdown-item text-decoration-none text-secondary d-block my-1"
+                    >Blog Single</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href=""
+                    class="dropdown-item text-decoration-none text-secondary d-block my-1"
+                    >Blog Single Sidebar</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item px-2">
+              <a href="#contact" class="nav-link fw-medium text-white"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+        <button
+          id="first-button"
+          class="btn btn-danger d-none d-md-block btn-outline-light py-2 px-4 fw-medium"
+        >
+          Get It Now
+        </button>
+      </div>
+    </nav>
+    <main
+      data-bs-spy="scroll"
+      data-bs-target="#navbar-scrollspy"
+      data-bs-offset="50"
+    >
+      <!-- Home -->
+      <section
+        id="home"
+        class="py-5 text-center bg-danger vh-100 d-flex align-items-center"
+      >
+        <div class="container py-5">
+          <div class="row align-items-center">
+            <div
+              class="col-lg-6 text-white text-center text-lg-start mb-5 mb-lg-0"
+            >
+              <h1 class="fw-bold mb-5">A Powerful App For Your Business.</h1>
+              <p class="mb-5">
+                From open source to pro services, Piqes helps you to build,
+                deploy, test, and monitor apps.
+              </p>
+              <div class="store-icons mb-3">
+                <a href="" class="me-2">
+                  <button class="btn btn-light text-danger py-2 px-4">
+                    <i class="bi bi-apple"></i>
+                    <span>App Store</span>
+                  </button>
+                </a>
+                <a href="">
+                  <button
+                    class="btn btn-danger btn-outline-light text-light py-2 px-4"
+                  >
+                    <i class="bi bi-google-play"></i>
+                    <span>Google Play</span>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <img
+                src="https://preview.uideck.com/items/appvilla/assets/images/hero/xphone.png.pagespeed.ic.XeQOrw0ZaA.webp"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Features -->
+      <section id="features" class="py-5 text-center bg-body-tertiary">
+        <div class="container py-5">
+          <div class="header w-50 mx-auto mb-5">
+            <h6 class="text-danger mb-3">FEATURES</h6>
+            <h2 class="fw-bold mb-4">
+              Your Experience Gets Better And Better Over Time.
+            </h2>
+            <p class="text-secondary">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form.
+            </p>
+          </div>
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+            <div class="col">
+              <div class="card border-0 shadow-sm text-start p-5">
+                <i
+                  class="bi bi-cloud-arrow-up-fill text-light fs-4 d-flex justify-content-center align-items-center rounded shadow"
+                ></i>
+                <div class="card-body p-0">
+                  <h5 class="fw-medium my-4">Push to Deploy</h5>
+                  <p class="text-secondary m-0">
+                    It is a long established fact that a reader will be
+                    distracted by the readable content of a page at its layout.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card border-0 shadow-sm p-5 text-start">
+                <i
+                  class="bi bi-lock-fill text-light fs-4 d-flex justify-content-center align-items-center rounded shadow"
+                ></i>
+                <div class="card-body p-0">
+                  <h5 class="fw-medium my-4">SSL Certificates</h5>
+                  <p class="text-secondary m-0">
+                    It is a long established fact that a reader will be
+                    distracted by the readable content of a page at its layout.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card border-0 shadow-sm p-5 text-start">
+                <i
+                  class="bi bi-arrow-clockwise text-light fs-4 d-flex justify-content-center align-items-center rounded shadow"
+                ></i>
+                <div class="card-body p-0">
+                  <h5 class="fw-medium my-4">Simple Queues</h5>
+                  <p class="text-secondary m-0">
+                    It is a long established fact that a reader will be
+                    distracted by the readable content of a page at its layout.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card border-0 shadow-sm p-5 text-start">
+                <i
+                  class="bi bi-shield text-light fs-4 d-flex justify-content-center align-items-center rounded shadow"
+                ></i>
+                <div class="card-body p-0">
+                  <h5 class="fw-medium my-4">Advanced Security</h5>
+                  <p class="text-secondary m-0">
+                    It is a long established fact that a reader will be
+                    distracted by the readable content of a page at its layout.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card border-0 shadow-sm p-5 text-start">
+                <i
+                  class="bi bi-gear text-light fs-4 d-flex justify-content-center align-items-center rounded shadow"
+                ></i>
+                <div class="card-body p-0">
+                  <h5 class="fw-medium my-4">Powerful API</h5>
+                  <p class="text-secondary m-0">
+                    It is a long established fact that a reader will be
+                    distracted by the readable content of a page at its layout.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card border-0 shadow-sm p-5 text-start">
+                <i
+                  class="bi bi-stack text-light fs-4 d-flex justify-content-center align-items-center rounded shadow"
+                ></i>
+                <div class="card-body p-0">
+                  <h5 class="fw-medium my-4">Database Backups</h5>
+                  <p class="text-secondary m-0">
+                    It is a long established fact that a reader will be
+                    distracted by the readable content of a page at its layout.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Overview -->
+      <section id="overview" class="py-5 text-center">
+        <div class="container py-5">
+          <div class="row align-items-center">
+            <div class="col-lg-7 mb-4 mb-lg-0">
+              <div class="text-start">
+                <i
+                  class="bi bi-download rounded text-light d-flex justify-content-center align-items-center fs-4"
+                ></i>
+                <h2 class="fw-bold my-4">
+                  125,000 Customers Using The Application!
+                </h2>
+                <p class="text-secondary mb-4">
+                  Collaborate over projects with your team and clients optimised
+                  for mobile and tablet don't let slow page speeds drive our
+                  innovative platform empowers anyone to convert clicks ou'll
+                  publish your first landing page in minutes.
+                </p>
+                <button
+                  class="btn btn-danger text-light fw-medium px-4 py-2 border-0"
+                >
+                  Get Started
+                </button>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div class="p-5">
+                <img
+                  src="https://preview.uideck.com/items/appvilla/assets/images/app-ss/xapp-ss1.png.pagespeed.ic.pWs8jkB5Zw.webp"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row align-items-center flex-column-reverse flex-lg-row">
+            <div class="col-lg-5">
+              <div class="p-5">
+                <img
+                  src="https://preview.uideck.com/items/appvilla/assets/images/app-ss/xapp-ss2.png.pagespeed.ic.fTfkjvu-lk.webp"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+            <div class="col-lg-7 mb-4 mb-lg-0">
+              <div class="text-start">
+                <i
+                  class="bi bi-columns rounded text-light d-flex justify-content-center align-items-center fs-4"
+                ></i>
+                <h2 class="fw-bold my-4">Seamless Loyalty</h2>
+                <p class="text-secondary mb-4">
+                  Collaborate over projects with your team and clients optimised
+                  for mobile and tablet don't let slow page speeds drive our
+                  innovative platform empowers anyone to convert clicks ou'll
+                  publish your first landing page in minutes.
+                </p>
+                <button
+                  class="btn btn-danger text-light fw-medium px-4 py-2 border-0"
+                >
+                  Get Started
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-5 text-center bg-danger text-light">
+        <div class="container py-5">
+          <div class="mb-5">
+            <h1 class="fw-bold">Trusted by developers from over 80 planets</h1>
+            <p>
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority.
+            </p>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-md-4 col-lg-3 mb-3 mb-md-0">
+              <h3 class="display-5 fw-bold">100%</h3>
+              <p class="lead">Satisfaction</p>
+            </div>
+            <div class="col-md-4 col-lg-3 mb-3 mb-md-0">
+              <h3 class="display-5 fw-bold">120K</h3>
+              <p class="lead">Happy Users</p>
+            </div>
+            <div class="col-md-4 col-lg-3 mb-3 mb-md-0">
+              <h3 class="display-5 fw-bold">125k+</h3>
+              <p class="lead">Downloads</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Pricing -->
+      <section id="pricing" class="py-5 text-center bg-body-tertiary">
+        <div class="container py-5">
+          <div class="header w-50 mx-auto mb-5">
+            <h6 class="text-danger mb-3">PRICING</h6>
+            <h2 class="fw-bold mb-4">Pricing Plan</h2>
+            <p class="text-secondary">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form.
+            </p>
+          </div>
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+            <div class="col mb-3 mb-lg-0">
+              <div class="card rounded-4 text-start p-3 w-100">
+                <div class="card-header bg-white">
+                  <h5 class="mb-3 fw-bold">Hobby</h5>
+                  <p class="mb-4 text-secondary small">
+                    All the basics for starting a new business
+                  </p>
+                  <p class="mb-4 text-secondary">
+                    <span class="display-6 fw-bold text-dark">$12</span>/mo
+                  </p>
+                  <a href=""
+                    ><button class="btn btn-dark w-100 mb-3 py-2">
+                      Buy Hobby
+                    </button></a
+                  >
+                </div>
+                <div class="card-body">
+                  <h6 class="fw-normal mb-3">WHAT'S INCLUDED</h6>
+                  <ul class="list-unstyled text-secondary">
+                    <li class="ps-4 small mb-2 d-flex align-items-center">
+                      Cras justo odio.
+                    </li>
+                    <li class="ps-4 small mb-2 d-flex align-items-center">
+                      Dapibus ac facilisis in.
+                    </li>
+                    <li class="ps-4 small mb-2 d-flex align-items-center">
+                      Morbi leo risus.
+                    </li>
+                    <li class="ps-4 small mb-2 d-flex align-items-center">
+                      Potenti felis, in cras ligula.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-3 mb-lg-0">
+              <div class="card rounded-4 text-start p-3 w-100">
+                <div class="card-header bg-white">
+                  <h5 class="mb-3 fw-bold">Freelancer</h5>
+                  <p class="mb-4 text-secondary small">
+                    All the basics for starting a new business
+                  </p>
+                  <p class="mb-4 text-secondary">
+                    <span class="display-6 fw-bold text-dark">$24</span>/mo
+                  </p>
+                  <a href=""
+                    ><button class="btn btn-dark w-100 mb-3 py-2">
+                      Buy Freelancer
+                    </button></a
+                  >
+                </div>
+                <div class="card-body">
+                  <h6 class="fw-normal mb-3">WHAT'S INCLUDED</h6>
+                  <ul class="list-unstyled text-secondary">
+                    <li class="ps-4 small mb-2 d-flex align-items-center">
+                      Cras justo odio.
+                    </li>
+                    <li class="ps-4 small mb-2 d-flex align-items-center">
+                      Dapibus ac facilisis in.
+                    </li>
+                    <li class="ps-4 small mb-2 d-flex align-items-center">
+                      Morbi leo risus.
+                    </li>
+                    <li class="ps-4 small mb-2 d-flex align-items-center">
+                      Potenti felis, in cras ligula.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-3 mb-lg-0">
+              <div class="card rounded-4 text-start p-3 w-100">
+                <div class="card-header bg-white">
+                  <h5 class="mb-3 fw-bold">Startup</h5>
+                  <p class="mb-4 text-secondary small">
+                    All the basics for starting a new business
+                  </p>
+                  <p class="mb-4 text-secondary">
+                    <span class="display-6 fw-bold text-dark">$32</span>/mo
+                  </p>
+                  <a href=""
+                    ><button class="btn btn-dark w-100 mb-3 py-2">
+                      Buy Startup
+                    </button></a
+                  >
+                </div>
+                <div class="card-body">
+                  <h6 class="fw-normal mb-3">WHAT'S INCLUDED</h6>
+                  <ul class="list-unstyled text-secondary">
+                    <li class="ps-4 small mb-2 d-flex align-items-center">
+                      Cras justo odio.
+                    </li>
+                    <li class="ps-4 small mb-2 d-flex align-items-center">
+                      Dapibus ac facilisis in.
+                    </li>
+                    <li class="ps-4 small mb-2 d-flex align-items-center">
+                      Morbi leo risus.
+                    </li>
+                    <li class="ps-4 small mb-2 d-flex align-items-center">
+                      Potenti felis, in cras ligula.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-3 mb-lg-0">
+              <div class="card rounded-4 text-start p-3 w-100">
+                <div class="card-header bg-white">
+                  <h5 class="mb-3 fw-bold">Enterprise</h5>
+                  <p class="mb-4 text-secondary small">
+                    All the basics for starting a new business
+                  </p>
+                  <p class="mb-4 text-secondary">
+                    <span class="display-6 fw-bold text-dark">$48</span>/mo
+                  </p>
+                  <a href=""
+                    ><button class="btn btn-dark w-100 mb-3 py-2">
+                      Buy Enterprise
+                    </button></a
+                  >
+                </div>
+                <div class="card-body">
+                  <h6 class="fw-normal mb-3">WHAT'S INCLUDED</h6>
+                  <ul class="list-unstyled text-secondary">
+                    <li class="ps-4 small mb-2 d-flex align-items-center">
+                      Cras justo odio.
+                    </li>
+                    <li class="ps-4 small mb-2 d-flex align-items-center">
+                      Dapibus ac facilisis in.
+                    </li>
+                    <li class="ps-4 small mb-2 d-flex align-items-center">
+                      Morbi leo risus.
+                    </li>
+                    <li class="ps-4 small mb-2 d-flex align-items-center">
+                      Potenti felis, in cras ligula.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Team -->
+      <section id="team" class="py-5 text-center">
+        <div class="container py-5">
+          <div class="header w-50 mx-auto mb-5">
+            <h6 class="text-danger mb-3">TEAM</h6>
+            <h2 class="fw-bold mb-4">Meat Our Team</h2>
+            <p class="text-secondary">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form.
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+              <div class="card rounded-4">
+                <img
+                  src="https://preview.uideck.com/items/appvilla/assets/images/team/xteam1.jpg.pagespeed.ic.48i9gBWoeS.webp"
+                  alt=""
+                  class="card-img-top"
+                />
+                <div class="card-body my-3">
+                  <div
+                    class="row align-items-center justify-content-center px-4"
+                  >
+                    <div class="col-lg-6 text-lg-start mb-3 mb-lg-0">
+                      <h5 class="fw-bold card-title">Leonard Krasner</h5>
+                      <p class="card-text fw-medium text-danger">
+                        Senior Designer
+                      </p>
+                    </div>
+                    <div class="col-lg-6 text-secondary text-lg-end">
+                      <i class="bi bi-twitter fs-5 mx-1"></i>
+                      <i class="bi bi-linkedin fs-5 mx-1"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+              <div class="card rounded-4">
+                <img
+                  src="https://preview.uideck.com/items/appvilla/assets/images/team/xteam2.jpg.pagespeed.ic.rBaVvtvbmv.webp"
+                  alt=""
+                  class="card-img-top"
+                />
+                <div class="card-body my-3">
+                  <div
+                    class="row align-items-center justify-content-center px-4"
+                  >
+                    <div class="col-lg-6 text-lg-start mb-3 mb-lg-0">
+                      <h5 class="fw-bold card-title">Leonard Krasner</h5>
+                      <p class="card-text fw-medium text-danger">
+                        Senior Designer
+                      </p>
+                    </div>
+                    <div class="col-lg-6 text-secondary text-lg-end">
+                      <i class="bi bi-twitter fs-5 mx-1"></i>
+                      <i class="bi bi-linkedin fs-5 mx-1"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+              <div class="card rounded-4">
+                <img
+                  src="https://preview.uideck.com/items/appvilla/assets/images/team/xteam3.jpg.pagespeed.ic.RCAiBveTku.webp"
+                  alt=""
+                  class="card-img-top"
+                />
+                <div class="card-body my-3">
+                  <div
+                    class="row align-items-center justify-content-center px-4"
+                  >
+                    <div class="col-lg-6 text-lg-start mb-3 mb-lg-0">
+                      <h5 class="fw-bold card-title">Leonard Krasner</h5>
+                      <p class="card-text fw-medium text-danger">
+                        Senior Designer
+                      </p>
+                    </div>
+                    <div class="col-lg-6 text-secondary text-lg-end">
+                      <i class="bi bi-twitter fs-5 mx-1"></i>
+                      <i class="bi bi-linkedin fs-5 mx-1"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Team Carousel -->
+      <section id="teamCarousel" class="py-5 text-center">
+        <div class="container py-5">
+          <div
+            id="teamIndicators"
+            class="carousel slide pb-5 position-relative"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators position-absolute bottom-0">
+              <button
+                type="button"
+                data-bs-target="#teamIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#teamIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#teamIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner d-flex py-3 px-5">
+              <div class="carousel-item active position-relative">
+                <div class="w-75 mx-auto h-100">
+                  <img
+                    src="https://preview.uideck.com/items/appvilla/assets/images/testimonial/brand2.svg"
+                    alt=""
+                    class="img-fluid flex-shrink-0"
+                  />
+                  <p class="fw-semibold my-5 lead">
+                    "It is a long established fact that a reader will be
+                    distracted by the readable content of a page when looking at
+                    its layout. The point of using Lorem Ipsum is that it has"
+                  </p>
+                  <img
+                    class="rounded-circle"
+                    src="https://preview.uideck.com/items/appvilla/assets/images/testimonial/xtesti1.jpg.pagespeed.ic.HvtaS2cTMW.webp"
+                    alt=""
+                  />
+                  <p class="lead my-2 fw-medium">Musharof Chowdhury</p>
+                  <p class="mb-0 text-secondary">CEO - Ayro UI</p>
+                </div>
+              </div>
+              <div class="carousel-item position-relative">
+                <div class="w-75 mx-auto h-100">
+                  <img
+                    src="https://preview.uideck.com/items/appvilla/assets/images/testimonial/brand1.svg"
+                    alt=""
+                    class="img-fluid flex-shrink-0"
+                  />
+                  <p class="fw-semibold my-5 lead">
+                    "It is a long established fact that a reader will be
+                    distracted by the readable content of a page when looking at
+                    its layout. The point of using Lorem Ipsum is that it has"
+                  </p>
+                  <img
+                    class="rounded-circle"
+                    src="https://preview.uideck.com/items/appvilla/assets/images/testimonial/xtesti1.jpg.pagespeed.ic.HvtaS2cTMW.webp"
+                    alt=""
+                  />
+                  <p class="lead my-2 fw-medium">Musharof Chowdhury</p>
+                  <p class="mb-0 text-secondary">CEO - GrayGrids</p>
+                </div>
+              </div>
+              <div class="carousel-item position-relative">
+                <div class="w-75 mx-auto h-100">
+                  <img
+                    src="https://preview.uideck.com/items/appvilla/assets/images/testimonial/brand3.svg"
+                    alt=""
+                    class="img-fluid flex-shrink-0"
+                  />
+                  <p class="fw-semibold my-5 lead">
+                    "It is a long established fact that a reader will be
+                    distracted by the readable content of a page when looking at
+                    its layout. The point of using Lorem Ipsum is that it has"
+                  </p>
+                  <img
+                    class="rounded-circle"
+                    src="https://preview.uideck.com/items/appvilla/assets/images/testimonial/xtesti3.jpg.pagespeed.ic.tAsZj1GkEP.webp"
+                    alt=""
+                  />
+                  <p class="lead my-2 fw-medium">Naimur Rahman</p>
+                  <p class="mb-0 text-secondary">CEO - WpthemesGrid</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Install App -->
+      <section id="installApp" class="py-5 text-center bg-danger text-light">
+        <div class="container py-5">
+          <h1 class="fw-bold">Install Appvilla and Start Using</h1>
+          <p class="my-5 lead">
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour, or randomised words which don't look even slightly
+            believable.
+          </p>
+          <div class="store-icons mb-3 d-flex justify-content-center">
+            <a href="" class="text-decoration-none me-3">
+              <button
+                class="btn btn-light text-danger py-2 px-4 d-flex align-items-center"
+              >
+                <i class="bi bi-apple fs-4 me-3"></i>
+                <span class="fs-4">App Store</span>
+              </button>
+            </a>
+            <a href="" class="text-decoration-none">
+              <button
+                class="btn btn-danger btn-outline-light border-2 text-light py-2 px-4 d-flex align-items-center"
+              >
+                <i class="bi bi-google-play fs-4 me-3"></i>
+                <span class="fs-4">Google Play</span>
+              </button>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- FAQ -->
+      <section id="faq" class="py-5 text-center">
+        <div class="container py-5">
+          <div class="header w-50 mx-auto mb-5">
+            <h6 class="text-danger mb-3">FAQ</h6>
+            <h2 class="fw-bold mb-4">Frequently Asked Questions</h2>
+            <p class="text-secondary">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form.
+            </p>
+          </div>
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item my-4 lead">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button px-4 py-3 fw-medium"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  <span
+                    class="me-4 p-1 border border-1 border-secondary rounded-circle border-opacity-25 small"
+                    >01</span
+                  >
+                  How Do I Contact Customer Services?
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                data-bs-parent="#accordionExample"
+              >
+                <div
+                  class="accordion-body text-start fs-6 text-secondary bg-body-tertiary p-4"
+                >
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Aliquam consectetur sit amet ante nec vulputate. Nulla
+                    aliquam, justo auctor consequat tincidunt, arcu erat mattis
+                    lorem, lacinia lacinia dui enim at eros. Pellentesque ut
+                    gravida augue. Duis ac dictum tellus
+                  </p>
+                  <p>
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life
+                    accusamus terry richardson ad squid. 3 wolf moon officia
+                    aute. non cupidatat skateboard dolor brunch. Foosd truck
+                    quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                    sunt alqua put a bird on it squid single-origin coffee nulla
+                    assumenda shoreditch et. Nihil anim ke ffiyeh helvetica,
+                    craft beer labore wes anderson cred nesciunt sapiente ea
+                    proident.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item my-4 lead">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button px-4 py-3 fw-medium collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="true"
+                  aria-controls="collapseTwo"
+                >
+                  <span
+                    class="me-4 p-1 border border-1 border-secondary rounded-circle border-opacity-25 small"
+                    >02</span
+                  >
+                  Material types can you work with?
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div
+                  class="accordion-body text-start fs-6 text-secondary bg-body-tertiary p-4"
+                >
+                  <p>
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life
+                    accusamus terry richardson ad squid. 3 wolf moon officia
+                    aute. non cupidatat skateboard dolor brunch. Foosd truck
+                    quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                    sunt alqua put a bird on it squid single-origin coffee nulla
+                    assumenda shoreditch et. Nihil anim ke ffiyeh helvetica,
+                    craft beer labore wes anderson cred nesciunt sapiente ea
+                    proident.
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Aliquam consectetur sit amet ante nec vulputate. Nulla
+                    aliquam, justo auctor consequat tincidunt, arcu erat mattis
+                    lorem, lacinia lacinia dui enim at eros. Pellentesque ut
+                    gravida augue. Duis ac dictum tellus
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item my-4 lead">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button px-4 py-3 fw-medium collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="true"
+                  aria-controls="collapseThree"
+                >
+                  <span
+                    class="me-4 p-1 border border-1 border-secondary rounded-circle border-opacity-25 small"
+                    >03</span
+                  >
+                  Can I have multiple activities in a single feature?
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div
+                  class="accordion-body text-start fs-6 text-secondary bg-body-tertiary p-4"
+                >
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Voluptas expedita, repellendus est nemo cum quibusdam optio,
+                    voluptate hic a tempora facere, nihil non itaque alias
+                    similique quas quam odit consequatur.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item my-4 lead">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button px-4 py-3 fw-medium collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour"
+                  aria-expanded="true"
+                  aria-controls="collapseFour"
+                >
+                  <span
+                    class="me-4 p-1 border border-1 border-secondary rounded-circle border-opacity-25 small"
+                    >04</span
+                  >
+                  How Clients Can Consult With online?
+                </button>
+              </h2>
+              <div
+                id="collapseFour"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div
+                  class="accordion-body text-start fs-6 text-secondary bg-body-tertiary p-4"
+                >
+                  <p>
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life
+                    accusamus terry richardson ad squid. 3 wolf moon officia
+                    aute. non cupidatat skateboard dolor brunch. Foosd truck
+                    quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                    sunt alqua put a bird on it squid single-origin coffee nulla
+                    assumenda shoreditch et.
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Provident iure ab nisi, magnam vitae. Laboriosam laborum
+                    suscipit recusandae officia laudantium, consectetur adipisci
+                    voluptates doloremque quisquam. Id rerum iusto reprehenderit
+                    assumenda!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item my-4 lead">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button px-4 py-3 fw-medium collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive"
+                  aria-expanded="true"
+                  aria-controls="collapseFive"
+                >
+                  <span
+                    class="me-4 p-1 border border-1 border-secondary rounded-circle border-opacity-25 small"
+                    >05</span
+                  >
+                  Can I share resources between features?
+                </button>
+              </h2>
+              <div
+                id="collapseFive"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div
+                  class="accordion-body text-start fs-6 text-secondary bg-body-tertiary p-4"
+                >
+                  <p>
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life
+                    accusamus terry richardson ad squid. 3 wolf moon officia
+                    aute. non cupidatat skateboard dolor brunch. Foosd truck
+                    quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                    sunt alqua put a bird on it squid single-origin coffee nulla
+                    assumenda shoreditch et.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Blog -->
+      <section id="blog" class="py-5 text-center bg-body-tertiary">
+        <div class="container py-5">
+          <div class="header w-50 mx-auto mb-5">
+            <h6 class="text-danger mb-3">BLOGS</h6>
+            <h2 class="fw-bold mb-4">Our Latest News</h2>
+            <p class="text-secondary">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form.
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+              <div class="card border-0 shadow h-100">
+                <img
+                  src="https://preview.uideck.com/items/appvilla/assets/images/blog/xblog-1.jpg.pagespeed.ic.7alEvDzcRw.webp"
+                  alt=""
+                  class="card-img-top"
+                />
+                <div class="card-body text-start p-4 d-flex flex-column">
+                  <a href="" class="text-decoration-none">
+                    <h5 class="card-subtitle text-danger mb-3 fw-medium">
+                      Blog
+                    </h5>
+                  </a>
+                  <a href="" class="text-decoration-none text-dark">
+                    <h4 class="card-title mb-0 fw-bold">
+                      Boost your conversion rate
+                    </h4>
+                  </a>
+                  <p class="my-4 text-secondary lead">
+                    Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy
+                    eirmod tempor ividunt dolore magna.
+                  </p>
+                  <div class="row align-items-center mt-auto">
+                    <div class="col-3 ps-2 pe-0 text-center">
+                      <img
+                        src="https://preview.uideck.com/items/appvilla/assets/images/blog/xcomment1.jpg.pagespeed.ic.nTUzOhBqKr.webp"
+                        alt=""
+                        class="img-fluid rounded-circle flex-shrink-0"
+                      />
+                    </div>
+                    <div class="col-9 text-start">
+                      <p class="lead mb-0">Roel Aufderhar</p>
+                      <p class="text-secondary mb-0">
+                        <span>Mar 15, 2023</span>
+                        <i class="bi bi-dot fs-4 text-body-secondary"></i>
+                        <span>5 min read</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+              <div class="card border-0 shadow h-100">
+                <img
+                  src="https://preview.uideck.com/items/appvilla/assets/images/blog/xblog-2.jpg.pagespeed.ic.xb1NU2mWer.webp"
+                  alt=""
+                  class="card-img-top"
+                />
+                <div class="card-body text-start p-4 d-flex flex-column">
+                  <a href="" class="text-decoration-none">
+                    <h5 class="card-subtitle text-danger mb-3 fw-medium">
+                      Video
+                    </h5>
+                  </a>
+                  <a href="" class="text-decoration-none text-dark">
+                    <h4 class="card-title mb-0 fw-bold">
+                      How to use search engine
+                    </h4>
+                  </a>
+                  <p class="my-4 text-secondary lead">
+                    Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy
+                    eirmod tempor ividunt dolore magna.
+                  </p>
+                  <div class="row align-items-center mt-auto">
+                    <div class="col-3 ps-2 pe-0 text-center">
+                      <img
+                        src="https://preview.uideck.com/items/appvilla/assets/images/blog/xcomment2.jpg.pagespeed.ic.j3fObWuXzs.webp"
+                        alt=""
+                        class="img-fluid rounded-circle flex-shrink-0"
+                      />
+                    </div>
+                    <div class="col-9 text-start">
+                      <p class="lead mb-0">Jenifer Zuliya</p>
+                      <p class="text-secondary mb-0">
+                        <span>Feb 10, 2023</span>
+                        <i class="bi bi-dot fs-4 text-body-secondary"></i>
+                        <span>7 min read</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+              <div class="card border-0 shadow h-100">
+                <img
+                  src="https://preview.uideck.com/items/appvilla/assets/images/blog/xblog-3.jpg.pagespeed.ic.nR-5rJAUwT.webp"
+                  alt=""
+                  class="card-img-top"
+                />
+                <div class="card-body text-start p-4 d-flex flex-column">
+                  <a href="" class="text-decoration-none">
+                    <h5 class="card-subtitle text-danger mb-3 fw-medium">
+                      Marketing
+                    </h5>
+                  </a>
+                  <a href="" class="text-decoration-none text-dark">
+                    <h4 class="card-title mb-0 fw-bold">
+                      Awesome ways to boost sales
+                    </h4>
+                  </a>
+                  <p class="my-4 text-secondary lead">
+                    Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy
+                    eirmod tempor ividunt dolore magna.
+                  </p>
+                  <div class="row align-items-center mt-auto">
+                    <div class="col-3 ps-2 pe-0 text-center">
+                      <img
+                        src="https://preview.uideck.com/items/appvilla/assets/images/blog/xcomment3.jpg.pagespeed.ic.-bSrbhJC3m.webp"
+                        alt=""
+                        class="img-fluid rounded-circle flex-shrink-0"
+                      />
+                    </div>
+                    <div class="col-9 text-start">
+                      <p class="lead mb-0">Roel Aufderhar</p>
+                      <p class="text-secondary mb-0">
+                        <span>Jan 20, 2023</span>
+                        <i class="bi bi-dot fs-4 text-body-secondary"></i>
+                        <span>6 min read</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Logo-Carousel -->
+      <section id="logoCarousel" class="py-5 text-center">
+        <div class="container py-5">
+          <div class="swiper logoSwiper">
+            <div class="swiper-wrapper align-items-center">
+              <div class="swiper-slide">
+                <img
+                  src="https://preview.uideck.com/items/appvilla/assets/images/client-logo/graygrids-logo.svg"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://preview.uideck.com/items/appvilla/assets/images/client-logo/lineicons-logo.svg"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://preview.uideck.com/items/appvilla/assets/images/client-logo/pagebulb-logo.svg"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://preview.uideck.com/items/appvilla/assets/images/client-logo/graygrids-logo.svg"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://preview.uideck.com/items/appvilla/assets/images/client-logo/lineicons-logo.svg"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://preview.uideck.com/items/appvilla/assets/images/client-logo/pagebulb-logo.svg"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://preview.uideck.com/items/appvilla/assets/images/client-logo/graygrids-logo.svg"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://preview.uideck.com/items/appvilla/assets/images/client-logo/lineicons-logo.svg"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://preview.uideck.com/items/appvilla/assets/images/client-logo/pagebulb-logo.svg"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact -->
+      <section id="contact" class="py-5 text-center bg-dark position-relative">
+        <div class="container py-5">
+          <div class="row mb-5">
+            <div class="col-md-4 text-center text-md-start">
+              <img
+                src="./assets/logo Tu white.png"
+                alt="logo white"
+                class="img-fluid w-75 mb-4"
+              />
+              <p class="text-light lead">
+                Making the world a better place through constructing elegant
+                hierarchies.
+              </p>
+              <div
+                class="social-logo text-light fs-4 my-4 gap-4 d-flex flex-wrap justify-content-center justify-content-md-start"
+              >
+                <i class="bi bi-facebook d-inline-block"></i>
+                <i class="bi bi-twitter d-inline-block"></i>
+                <i class="bi bi-instagram d-inline-block"></i>
+                <i class="bi bi-linkedin d-inline-block"></i>
+                <i class="bi bi-youtube d-inline-block"></i>
+                <i class="bi bi-pinterest d-inline-block"></i>
+              </div>
+              <p class="text-light mb-5 mb-md-0">
+                Designed and Developed by
+                <a href="" class="text-light text-decoration-none">TuHongLe</a>
+              </p>
+            </div>
+            <div class="col-md-8 text-light">
+              <div class="row">
+                <div
+                  class="col-md-6 col-lg-3 text-center text-lg-start mb-4 mb-lg-0"
+                >
+                  <h4 class="mb-4 fs-4 fw-bold">Solutions</h4>
+                  <div class="text">
+                    <p>Marketing</p>
+                    <p>Analytics</p>
+                    <p>Commerce</p>
+                    <p>Insights</p>
+                    <p>Promotion</p>
+                  </div>
+                </div>
+                <div
+                  class="col-md-6 col-lg-3 text-center text-lg-start mb-4 mb-lg-0"
+                >
+                  <h4 class="mb-4 fs-4 fw-bold">Support</h4>
+                  <div class="text">
+                    <p>Pricing</p>
+                    <p>Documentation</p>
+                    <p>Guides</p>
+                    <p>API Status</p>
+                    <p>Live Support</p>
+                  </div>
+                </div>
+                <div
+                  class="col-md-6 col-lg-3 text-center text-lg-start mb-4 mb-lg-0"
+                >
+                  <h4 class="mb-4 fs-4 fw-bold">Company</h4>
+                  <div class="text">
+                    <p>About Us</p>
+                    <p>Our Blog</p>
+                    <p>Jobs</p>
+                    <p>Press</p>
+                    <p>Contact Us</p>
+                  </div>
+                </div>
+                <div
+                  class="col-md-6 col-lg-3 text-center text-lg-start mb-4 mb-lg-0"
+                >
+                  <h4 class="mb-4 fs-4 fw-bold">Legal</h4>
+                  <div class="text">
+                    <p>Terms & Conditions</p>
+                    <p>Privacy Policy</p>
+                    <p>Catering Services</p>
+                    <p>Customer Relations</p>
+                    <p>Innovation</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <form
+            class="p-4 border border-secondary-subtle border-opacity-25 rounded-3"
+          >
+            <div class="row d-md-flex align-items-md-center">
+              <div class="col-md-5 text-light text-center text-md-start">
+                <p class="lead fw-medium">Subscribe To Our Newsletter</p>
+                <p>
+                  The latest news, articles, and resources, sent to your inbox
+                  weekly.
+                </p>
+              </div>
+              <div class="col-md-7">
+                <div class="row">
+                  <div class="col-md-8 p-0 d-flex mb-3 mb-md-0">
+                    <input
+                      type="email"
+                      class="form-control ps-3 py-3 py-md-2 d-block bg-secondary text-light"
+                      placeholder="Your email address"
+                    />
+                  </div>
+                  <div class="col-md-4 p-0">
+                    <div class="px-md-2 px-0">
+                      <button
+                        class="btn btn-danger text-light px-4 py-3 fw-medium lead w-100"
+                      >
+                        Subscribe
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+          <a href="">
+            <button
+              class="btn btn-danger btn-lg text-light position-fixed bottom-0 end-0 m-2"
+            >
+              <i class="fa-solid fa-angle-up"></i>
+            </button>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Swwiper JS here -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- ====== Bootstrap 5 JS here ======= -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,443 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Inter, sans-serif;
+}
+
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+
+$danger : #FF6B81;
+$secondary : #888888;
+$dark: #081828;
+
+$theme-colors: map-merge($theme-colors, (
+  "danger": $danger,
+  "secondary": $secondary,
+  "dark": $dark
+));
+
+//* Override sass accordion icon before import bootstrap.css
+$accordion-button-icon: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0iY3VycmVudENvbG9yIiBjbGFzcz0iYmkgYmktcGx1cy1sZyIgdmlld0JveD0iMCAwIDE2IDE2Ij4KICA8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik04IDJhLjUuNSAwIDAgMSAuNS41djVoNWEuNS41IDAgMCAxIDAgMWgtNXY1YS41LjUgMCAwIDEtMSAwdi01aC01YS41LjUgMCAwIDEgMC0xaDV2LTVBLjUuNSAwIDAgMSA4IDJaIi8+Cjwvc3ZnPg==");
+$accordion-button-active-icon: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0iI0ZGRkZGRiIgY2xhc3M9ImJpIGJpLWRhc2gtbGciIHZpZXdCb3g9IjAgMCAxNiAxNiI+CiAgPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMiA4YS41LjUgMCAwIDEgLjUtLjVoMTFhLjUuNSAwIDAgMSAwIDFoLTExQS41LjUgMCAwIDEgMiA4WiIvPgo8L3N2Zz4=");
+
+$input-placeholder-color: $light;
+
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+
+
+@mixin hover($upPixel, $color: transparent) {
+  transition: all .25s linear;
+
+  &:hover {
+    transform: translateY($upPixel);
+    box-shadow: 0 0 10px 5px $color;
+  }
+}
+
+body {
+  nav.navbar {
+    .navbar-collapse.collapsing {
+      opacity: 0;
+      visibility: hidden;
+      position: absolute;
+    }
+  
+    #first-button {
+      
+      &:hover {
+        color: $danger !important;
+      }
+    }
+  }
+
+  main {
+    #home, #installApp {
+      .store-icons {
+        a {
+          &:first-child {
+            button:hover {
+              background-color: #081828;
+              color: $light !important;
+              border: none;
+            }
+          }
+
+          &:last-child {
+            button:hover {
+              background-color: $light;
+              color: $danger !important;
+              border: none;
+            }
+          }
+        }
+      }
+    }
+
+    #features {
+      div.card {
+        i.bi {
+          width: 60px;
+          height: 60px;
+          background-color: $danger !important;
+        }
+
+        @include hover(-2%, $secondary);
+      }
+    }
+
+    #overview {
+      .text-start {
+        i.bi {
+          width: 60px !important;
+          height: 60px !important;
+          background-color: $danger !important;
+        }
+
+        button {
+          &:hover {
+            background-color: #081828;
+            color: $light !important;
+            border: none;
+          }
+        }
+      }
+    }
+
+    #pricing {
+      div.card {
+        @include hover(-1%, $gray-400);
+
+        button {
+          &:hover {
+            background-color: $danger;
+            color: white;
+            border: none;
+          }
+        }
+
+        li {
+          position: relative;
+
+          &::before {
+            content: "";
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            left: 0;
+            background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0iI2ZmNmI4MSIgY2xhc3M9ImJpIGJpLWNoZWNrLWNpcmNsZSIgdmlld0JveD0iMCAwIDE2IDE2Ij4KICA8cGF0aCBkPSJNOCAxNUE3IDcgMCAxIDEgOCAxYTcgNyAwIDAgMSAwIDE0em0wIDFBOCA4IDAgMSAwIDggMGE4IDggMCAwIDAgMCAxNnoiLz4KICA8cGF0aCBkPSJNMTAuOTcgNC45N2EuMjM1LjIzNSAwIDAgMC0uMDIuMDIyTDcuNDc3IDkuNDE3IDUuMzg0IDcuMzIzYS43NS43NSAwIDAgMC0xLjA2IDEuMDZMNi45NyAxMS4wM2EuNzUuNzUgMCAwIDAgMS4wNzktLjAybDMuOTkyLTQuOTlhLjc1Ljc1IDAgMCAwLTEuMDcxLTEuMDV6Ii8+Cjwvc3ZnPg==") no-repeat center center / cover;
+          }
+        }
+      }
+    }
+
+    #team {
+      .card {
+        i.bi {
+          transition: all 0.25s linear;
+
+          &:hover {
+            cursor: pointer;
+            color: $danger !important;
+          }
+        }
+
+        &:hover {
+          @include hover(-2%, $gray-200)
+        }
+      }
+    }
+
+    #teamCarousel {
+      position: relative;
+
+      .carousel-indicators {
+        button {
+          display: inline-block;
+          border: none !important;
+          width: 14px;
+          height: 6px !important;
+          border-radius: 5px !important;
+          background-color: #081828 !important;
+          margin: 0 5px;
+          transition: all 0.2s linear;
+
+          &.active {
+            width: 25px !important;
+            background-color: $danger !important;
+          }
+
+          &:hover {
+            background-color: $danger !important;
+          }
+        }
+      }
+
+      .carousel-inner {
+        .carousel-item {
+          img.img-fluid {
+            width: 160px !important;
+          }
+  
+          img.rounded-circle {
+            width: 50px;
+            height: 50px;
+          }
+        }
+      }
+
+      &::before, &::after{
+        content: "";
+        position: absolute;
+        width: 180px;
+        height: 350px;
+        background: url("https://preview.uideck.com/items/appvilla/assets/images/testimonial/testi-patern.svg") no-repeat center center / cover ;
+      }
+
+      &::before {
+        bottom: 0;
+        left: 0;
+      }
+
+      &::after {
+        top: 0;
+        right: 0;
+      }
+    }
+
+    #faq {
+      h2.accordion-header {
+        button {
+          transition: all 0.2s linear;
+          border-radius: 5px !important;
+
+          &:focus {
+            box-shadow: none !important;
+          }
+
+          &:not(.collapsed) {
+            background-color: $danger !important;
+            color: white !important;
+  
+            span {
+              background-color: white !important;
+              color: black !important;
+            }
+          }
+        }
+      }
+    }
+
+    #blog {
+      .card {
+        overflow: hidden;
+        .card-body {
+          img {
+            width: 50px;
+            height: 50px;
+          }
+        }
+
+        &:hover {
+          img.card-img-top {
+            transform: scale(1.1);
+            transition: all 0.25s linear;
+          }
+        }
+
+        h4, div.text-start.col-9 p, div.text-start.col-9 p span {
+          &:hover {
+            color: $danger;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    #logoCarousel {
+      .swiper-slide {
+        img {
+          width: 180px !important;
+        }
+      }
+    }
+
+    #contact {
+      i.bi, .text p, a {
+        &:hover {
+          color: $danger !important;
+          cursor: pointer;
+        }
+      }
+
+      .row {
+        button {
+          &:hover {
+            background-color: white !important;
+            color: $danger !important;
+          }
+        }
+      }
+
+      a {
+        button {
+          &:hover {
+            background-color: $dark;
+            @include hover(-10%);
+            border: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+//! Media < 992px
+@media only screen and (max-width: 991px) {
+  nav.navbar {
+    .toggler-icon {
+      display: block;
+      width: 30px;
+      height: 3px;
+      background-color: white;
+      transition: all 0.25s linear;
+    }
+
+    button.navbar-toggler {
+      .top-bar {
+        transform-origin: 0 0;
+        margin-top: 0;
+        transform: rotate(33deg);
+      }
+      .middle-bar {
+        opacity: 0;
+        margin: 5px 0;
+      }
+      .bottom-bar {
+        transform-origin: 0 0;
+        margin-bottom: 0;
+        transform: rotate(-33deg);
+      }
+
+      &.collapsed,
+      &[aria-expanded="false"] {
+        .top-bar {
+          margin-top: 5px;
+          transform: rotate(0deg);
+        }
+        .middle-bar {
+          margin: 5px 0;
+          opacity: 1;
+        }
+        .bottom-bar {
+          margin-bottom: 5px;
+          transform: rotate(0deg);
+        }
+      }
+    }
+
+    div.navbar-collapse.collapse {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 100%;
+      transition: all 0.2s linear 0.1s;
+
+      ul.navbar-nav {
+        background-color: white !important;
+        padding-left: 25px;
+        box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 10px 0 0 10px;
+
+        a.nav-link {
+          color: $dark !important;
+          margin: 10px 0;
+
+          &.active, &:hover {
+            color: $danger !important;
+          }
+        }
+
+        #blogButton {
+          position: relative;
+
+          ul.dropdown-menu {
+            border: none;
+            box-shadow: none;
+
+            a.dropdown-item {
+              margin: 10px 0;
+    
+              &:hover {
+                color: $danger !important;
+                background-color: white;
+              }
+            }
+          }
+          
+          a.nav-link {
+            &::before {
+              content: "\f107";
+              position: absolute;
+              font: var(--fa-font-solid);
+              right: 20px;
+              top: 25px;
+              transition: all 0.2s linear;
+            }
+          }
+
+          a.nav-link.show {
+            &::before {
+              content: "\f106";
+              position: absolute;
+              font: var(--fa-font-solid);
+              right: 20px;
+              top: 25px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//! Media >= 992px
+@media only screen and (min-width: 992px) {
+  nav.navbar {
+    ul.navbar-nav {
+      a.nav-link {
+        &.active {
+          color: white;
+        }
+      }
+    }
+
+    #blogButton {
+      &:hover {
+        ul.dropdown-menu {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+
+      ul.dropdown-menu {
+        border: none;
+        left: 20%;
+        top: 150%;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.25s linear;
+        box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
+        
+        a.dropdown-item {
+          margin: 10px 0;
+
+          &:hover {
+            color: $danger !important;
+            background-color: white;
+          }
+        }
+      }
+    }
+  }
+}
