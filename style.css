@@ -4435,7 +4435,7 @@ textarea.form-control-lg {
   --bs-breadcrumb-margin-bottom: 1rem;
   --bs-breadcrumb-bg: ;
   --bs-breadcrumb-border-radius: ;
-  --bs-breadcrumb-divider-color: #6c757d;
+  --bs-breadcrumb-divider-color: #f8f9fa;
   --bs-breadcrumb-item-padding-x: 0.5rem;
   --bs-breadcrumb-item-active-color: #6c757d;
   display: flex;
@@ -10944,6 +10944,51 @@ body main #contact a button:hover:hover {
   transform: translateY(-10%);
   box-shadow: 0 0 10px 5px transparent;
 }
+body main #contact-us {
+  position: relative;
+  padding-top: 82.575px;
+}
+body main #contact-us::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 82.575px;
+  background-color: #FF6B81;
+  top: 0;
+  left: 0;
+}
+body main #contact-us ol.breadcrumb li.breadcrumb-item:first-child:hover a {
+  text-decoration: underline !important;
+}
+body main #contact-info .row .col-lg-4 .text-start {
+  transition: all 0.2s linear;
+}
+body main #contact-info .row .col-lg-4 .text-start:hover {
+  color: white;
+  background-color: #FF6B81;
+}
+body main #contact-info .row .col-lg-4 .text-start:hover i.bi {
+  color: white !important;
+}
+body main #contact-info .row .col-lg-4 .text-start:hover li {
+  color: white !important;
+}
+body main #send-message {
+  background: url("https://preview.uideck.com/items/appvilla/assets/images/contact/xcontact-bg.jpg.pagespeed.ic.cu2b_6UyQv.jpg") no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+}
+body main #send-message::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 66%;
+  background-color: #FF6B81;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
 
 @media only screen and (max-width: 991px) {
   nav.navbar .toggler-icon {
@@ -11027,6 +11072,9 @@ body main #contact a button:hover:hover {
     font: var(--fa-font-solid);
     right: 20px;
     top: 25px;
+  }
+  #send-message::before {
+    width: 100% !important;
   }
 }
 @media only screen and (min-width: 992px) {

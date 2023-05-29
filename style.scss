@@ -22,6 +22,7 @@ $accordion-button-icon: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL
 $accordion-button-active-icon: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0iI0ZGRkZGRiIgY2xhc3M9ImJpIGJpLWRhc2gtbGciIHZpZXdCb3g9IjAgMCAxNiAxNiI+CiAgPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMiA4YS41LjUgMCAwIDEgLjUtLjVoMTFhLjUuNSAwIDAgMSAwIDFoLTExQS41LjUgMCAwIDEgMiA4WiIvPgo8L3N2Zz4=");
 
 $input-placeholder-color: $light;
+$breadcrumb-divider-color: $light;
 
 @import "node_modules/bootstrap/scss/bootstrap.scss";
 
@@ -289,6 +290,74 @@ body {
         }
       }
     }
+
+    #contact-us {
+      position: relative;
+      padding-top: 82.575px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 82.575px;
+        background-color: $danger;
+        top: 0;
+        left: 0;
+      }
+
+      ol.breadcrumb {
+        li.breadcrumb-item {
+          &:first-child {
+            &:hover {
+              a {
+                text-decoration: underline !important;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    #contact-info {
+      .row {
+        .col-lg-4 {
+          .text-start {
+            transition: all 0.2s linear;
+
+            &:hover {
+              color: white;
+              background-color: $danger;
+
+              i.bi {
+                color: white !important;
+              }
+
+              li {
+                color: white !important;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    #send-message {
+      background: url("https://preview.uideck.com/items/appvilla/assets/images/contact/xcontact-bg.jpg.pagespeed.ic.cu2b_6UyQv.jpg") no-repeat center center fixed;
+      background-size: cover;
+      position: relative;
+      z-index: 0;
+
+      &::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 66%;
+        background-color: $danger;
+        top: 0;
+        left: 0;
+        z-index: -1;
+      }
+    }
   }
 }
 
@@ -397,6 +466,12 @@ body {
           }
         }
       }
+    }
+  }
+
+  #send-message {
+    &::before {
+      width: 100% !important;
     }
   }
 }
